@@ -1,0 +1,5 @@
+<label [for]="rid">{{ label }}</label>
+<ng-content></ng-content>
+<div *ngIf="control && control.invalid" class="msg">
+  <i class="fas fa-exclamation-circle">{{ getMessage() }}</i>
+</div>

@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue scrolling-navbar">
+    <a class="navbar-brand" href="#"> <img src="../assets/images/gedoplan.png" alt="GEDOPLAN" /> </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="material">Material</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="customer">Customer</a></li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link" target="new" href="https://javaeeblog.wordpress.com/"><i class="fab fa-wordpress"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="new" href="https://github.com/GEDOPLAN"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="p-5 my-5"><router-outlet></router-outlet></main>

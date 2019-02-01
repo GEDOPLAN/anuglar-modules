@@ -1,0 +1,14 @@
+<table mdbTable class="z-depth-1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Titel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let element of (data$ | async); let i = index">
+      <td>{{ element.id }}</td>
+      <td>{{ element.title }}</td>
+    </tr>
+  </tbody>
+</table>

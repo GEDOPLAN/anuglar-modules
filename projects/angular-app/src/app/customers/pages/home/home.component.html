@@ -1,0 +1,34 @@
+<h2>User Daten</h2>
+
+<div class="container">
+  <form class="text-center border border-light p-5" novalidate [formGroup]="form" #f (ngSubmit)="save()">
+    <div class="form-row mb-2">
+      <div class="col-sm-12 col-md pb-2">
+        <appc-input label="Vorname">
+          <input type="text" id="firstname" class="form-control " formControlName="firstname" />
+        </appc-input>
+      </div>
+      <div class="col-sm-12 col-md pb-2">
+        <appc-input label="Nachname">
+          <input type="text" id="lastname" class="form-control" formControlName="lastname" />
+        </appc-input>
+      </div>
+    </div>
+
+    <appc-input label="Mail">
+      <input type="email" id="mail" class="form-control mb-2" formControlName="mail" />
+    </appc-input>
+
+    <appc-input label="Passwort">
+      <input
+        formControlName="password"
+        appcMailFormatter
+        type="password"
+        id="password"
+        class="form-control"
+        aria-describedby="defaultRegisterFormPasswordHelpBlock"
+      />
+    </appc-input>
+    <button mdbBtn color="blue" block="true" class="my-4" type="submit">speichern</button>
+  </form>
+</div>
